@@ -9,3 +9,18 @@
 --placa decimal(18,2),
 --odjel int
 --);
+--create table sudjeluje(
+--zaposlenik int,
+--projekt int,
+--datumpristupanja datetime
+--);
+--create table projekt(
+--sifra int,
+--naziv varchar(50),
+--datumpocetka datetime,
+--datumkraja datetime
+--);
+--create table odijel(
+--sifra int,
+--naziv varchar(50)
+--);
