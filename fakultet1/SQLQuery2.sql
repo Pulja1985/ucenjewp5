@@ -7,9 +7,9 @@
 --datumispita datetime,
 --pristupio bit
 --);
-create table pristupnici(
-ispitnirok datetime,
-student varchar(50),
-brojbodova int,
-ocijena int
-);
+--create table pristupnici(
+--ispitnirok datetime,
+--student varchar(50),
+--brojbodova int,
+--ocijena int
+--);
