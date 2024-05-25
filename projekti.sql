@@ -1,0 +1,11 @@
+--create database projekti;
+--use projekti
+--create table zaposlenik(
+--sifra int,
+--nadredeni int,
+--ime varchar(50),
+--prezime varchar(50),
+--datumrodjenja datetime,
+--placa decimal(18,2),
+--odjel int
+--);
