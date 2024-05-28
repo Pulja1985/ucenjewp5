@@ -15,3 +15,8 @@
 --predmet varchar(50),
 --profesor varchar(50)
 --);
+create table rokovi(
+datum_pocetka datetime,
+vrijeme_pocetka datetime,
+broj_studenata int
+);
