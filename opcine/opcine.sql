@@ -1,4 +1,4 @@
-use master;
+Ôªøuse master;
 go
 drop database if exists zupanije;
 go 
@@ -42,29 +42,29 @@ alter table zupanija_opcina_mjesto_zupan add foreign key (zupan_sifra) reference
 
 
 insert into zupanija(naziv,zupan)values
-('Vukovarsko-srijemska ûupanija','Damir Dekani?'),
-('Splitsko-dalmatinska ûupanija','Blaûenko Boban'),
-('Zagreba?ka ûupanija','Stijepan Koûi?')
+('Vukovarsko-srijemska ≈æupanija','Damir Dekaniƒá'),
+('Splitsko-dalmatinska ≈æupanija','Bla≈æenko Boban'),
+('Zagreba?ka ≈æupanija','Stijepan Ko≈æiƒá')
 
  select * from zupanija;
 
  insert into opcina(zupanija,naziv)values
- ('Vukovarsko-srijemska ûupanija','Nuötar'),
- ('Vukovarsko-srijemska ûupanija','Ivankovo'),
- ('Splitsko-dalmatinska ûupanija','Baöka voda'),
- ('Splitsko-dalmatinska ûupanija','Bol'),
- ('Zagrebacka ûupanija','Dubrava'),
- ('Zagrebacka ûupanija','Dubravica')
+ ('Vukovarsko-srijemska ≈æupanija','Nu≈°tar'),
+ ('Vukovarsko-srijemska ≈æupanija','Ivankovo'),
+ ('Splitsko-dalmatinska ≈æupanija','Ba≈°ka voda'),
+ ('Splitsko-dalmatinska ≈æupanija','Bol'),
+ ('Zagrebacka ≈æupanija','Dubrava'),
+ ('Zagrebacka ≈æupanija','Dubravica')
 
  select*from opcina;
 
  insert into mjesto(opcina,naziv)values
- ('Nustar','Nustar'),
+ ('Nustar','Nu≈°tar'),
  ('Nustar','Marinci'),
- ('Nustar','Ceri?'),
- ('Baöka voda','Baöka voda'),
- ('Baöka voda','Promajna'),
- ('Baöka voda','Bratuö'),
+ ('Nustar','Ceriƒá'),
+ ('Ba≈°ka voda','Ba≈°ka voda'),
+ ('Ba≈°ka voda','Promajna'),
+ ('Ba≈°ka voda','Bratu≈°'),
  ('Dubrava','Dubrava'),
  ('Dubrava','Badinec'),
  ('Dubrava','Brezje')
@@ -72,8 +72,28 @@ insert into zupanija(naziv,zupan)values
  select * from mjesto;
 
  insert into zupan(ime,prezime)values
- ('Damir','Dekani?'),
- ('Blaûenko','Boban'),
- ('Stijepan','Kozi?')
+ ('Damir','Dekaniƒá'),
+ ('Bla≈æenko','Boban'),
+ ('Stijepan','Ko≈æiƒá')
  
  Select * from zupan;
+
+ select * from mjesto where sifra=4;
+
+ update mjesto set naziv='Krvavica' where sifra=4;
+
+ select * from mjesto where sifra=5;
+
+ update mjesto set naziv='Bast'where sifra =5;
+
+ select * from mjesto where sifra =6;
+
+ update mjesto set naziv='Topiƒái' where sifra=6;
+
+ select * from mjesto where sifra =7;
+
+ update mjesto set naziv='Koritna' where sifra=7;
+
+ select * from mjesto where sifra=8;
+
+ update mjesto set naziv='Mostari' where sifra=8;
