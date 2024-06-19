@@ -109,13 +109,13 @@ select * from muskarac;
 
 insert into svekar(bojaociju,prstena,dukserica,lipa,eura,majica)values
 ('Smeđa','2','Nike plava','273.69','711.59','Kratka Adidas'),
-('Crna','2','Adidas smaeđa','159.78','901.66','Žuta Nike'),
-('Plava','2','Puma crna','221.33','1237.00','Bijela Puma')
+('Crna','1','Adidas smaeđa','159.78','901.66','Žuta Nike'),
+('Plava','0','Puma crna','221.33','1237.00','Bijela Puma')
 
 select * from svekar;
 
 insert into sestra_svekar(sestra,svekar)values
-(1,1),(2,2),(3,1)
+(1,1),(2,2),(3,1),(1,3),(2,3)
 
 select * from sestra_svekar;
 
