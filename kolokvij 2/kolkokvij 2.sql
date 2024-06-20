@@ -61,7 +61,7 @@ neprijatelj int not null
 create table prijatelj(
 sifra int not null primary key identity(1,1),
 modelnaocala varchar(37),
-trciputa datetime not null,
+treciputa datetime not null,
 ektroventno bit not null,
 prviputa datetime,
 svekar int not null
@@ -101,7 +101,7 @@ select * from decko_zarucnica;
 
 insert into cura(haljina,drugiputa,suknja,narukvica,introvertno,majica,decko)values
 ('Crevena haljina','2023-12-01','Zelena Nike',2,'1','žuta Adidas',3),
-('Roza haljina','2023-09-30','Ljubicasta Puma',4,'1','Tirkinzno zelena Umbro',3),
+('Roza haljina','2023-09-30','Crvena Adidas',4,'1','Tirkinzno zelena Umbro',3),
 ('Zelena haljina','2023-11-25','Roza Nike',1,'0','Dunav Plava Nike',3)
 
 select * from cura;
@@ -117,6 +117,39 @@ insert INTO brat(suknja,ogrlica,asocijalno,neprijatelj)VALUES
 ('Zelena Nike',3,1,1),
 ('Crvena Puma',4,0,2),
 ('Ljubicasta Adidas',1,1,3)
+
+select * from brat;
+
+insert into svekar(stilfrizura,ogrlica,asocijalno)values
+('Rambo',2,0),
+('Lonac',3,1),
+('Irokeza',1,0)
+
+select * from svekar;
+
+
+insert into prijatelj(modelnaocala,treciputa,ektroventno,prviputa,svekar)values
+('Ray Ban3','2020-10-28','1','2019-01-01',1),
+('Ray Ban4','2020-07-22','0','2018-02-20',2),
+('Ray Ban5','2020-11-13','1','2019-05-15',3)
+
+select * from prijatelj;
+
+
+update prijatelj set treciputa ='2020-04-30';
+
+delete from brat where ogrlica <> 14;
+
+select suknja from cura where drugiputa is null; 
+
+select zarucnica.novcica,brat.neprijatelj,neprijatelj.haljina
+from zarucnica
+join neprijatelj on neprijatelj.cura=cura.sifra
+join cura on cura.decko=decko.sifra
+join decko_zarucnica on decko.sifra=decko_zarucnica.decko
+join decko_zarucnica on  zarusnica.sifra=decko_zarucnica.zarucnica
+where cura.drugiputa     and decko.vesta like'%ba%'
+
 
 
 
