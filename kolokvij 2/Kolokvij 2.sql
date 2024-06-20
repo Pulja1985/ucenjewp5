@@ -79,3 +79,30 @@ alter table cura add foreign key (decko) references decko(sifra);
 alter table decko_zarucnica add foreign key (decko) references decko(sifra);
 alter table decko_zarucnica add foreign key (zarucnica) references zarucnica(sifra);
 alter table prijatelj add foreign key (svekar)references svekar(sifra);
+
+insert into decko(indiferentno,vesta,asocijalno)values
+('1','Crvena Nike','0'),
+('0','Žuta Puma','1'),
+('1','Crna Adidas','0')
+
+select * from decko;
+
+insert into zarucnica(narukvica,bojakose,novcica,lipa,indiferentno)values
+(2,'Smeđa','1553.56','153.37','1'),
+(2,'Crna','1258.36','128.87','0'),
+(2,'Žuta','1359.48','1977.19','1')
+
+select * from zarucnica;
+
+insert into decko_zarucnica(decko,zarucnica)values
+(1,1),(2,1),(3,1)
+
+select * from decko_zarucnica;
+
+insert into cura(haljina,drugiputa,suknja,narukvica,introvertno,majica,decko)values
+('Crevena haljina','2023-12-01','Zelena Nike',2,'1','žuta Adidas',3),
+('Roza haljina','2023-09-30','Ljubicasta Puma',4,'1','Tirkinzno zelena Umbro',3),
+('Zelena haljina','2023-11-25','Roza Nike',1,'0','Dunav Plava Nike',3)
+
+select * from cura;
+
