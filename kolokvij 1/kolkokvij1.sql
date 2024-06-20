@@ -89,33 +89,40 @@ alter table cura add foreign key (punac)references punac(sifra);
 insert into sestra(introvertno,haljina,maraka,hlace,narukvica) values
 (1,'Bijela','200.51','Crvene adidas','0'),
 (1,'Žuta','255.44','Crvene Nike','1'),
-(1,'Crna','237.72','Žuta Lotto','0')
+(1,'Crna','237.72','Žuta Lotto','0'),
+(0,'Plava','370.27','Ljubičasta Puma','1');
 
 select * from sestra;
 
 insert into zena(treciputa,hlace,kratkamajica,jmbag,bojaociju,haljina,sestra)values
 ('2018-12-03','Dior','Adidas','12345678910','Smeđa','Kratka crna',1),
 ('2019-11-04','Nike','Coca cola','12345678912','Crna','Kratka smeđa',2),
-('2020-07-24','Lotto','Umbro','12345678999','Plava','Dugačka ljubičasta',3)
+('2020-07-24','Lotto','Umbro','12345678999','Plava','Dugačka ljubičasta',3);
 
 select * from zena;
 
 insert into muskarac(bojaociju,hlace,modelnaocala,maraka,zena)values
 ('Smeđa','Big_Star','Superdry_elegance','298.15000',1),
 ('Crna','Levis','Nike_fasion','122.58000',2),
-('Plava','Nike','Apollo','427.99000',3)
+('Plava','Nike','Apollo','427.99000',3);
 
 select * from muskarac;
 
 insert into svekar(bojaociju,prstena,dukserica,lipa,eura,majica)values
 ('Smeđa','2','Nike plava','273.69','711.59','Kratka Adidas'),
 ('Crna','1','Adidas smaeđa','159.78','901.66','Žuta Nike'),
-('Plava','0','Puma crna','221.33','1237.00','Bijela Puma')
+('Plava','0','Puma crna','221.33','1237.00','Bijela Puma');
 
 select * from svekar;
 
 insert into sestra_svekar(sestra,svekar)values
 (1,1),(2,2),(3,1),(1,3),(2,3)
+
+insert into mladic(suknja,kuna,drugiputa,asocijalno,eksroventno,dukserica,muskarac)values
+('Crvena suknja',1567.77,'2023-09-03',1,0,'Ferrari crvena',1),
+('Zelena suknja',1469.47,'2023-10-04',0,0,'Audi Smeđa',2),
+('Žuta suknja',1137.87,'2023-07-12',1,1,'Honda Crna',3);
+
 
 select * from sestra_svekar;
 
@@ -125,18 +132,25 @@ delete from mladic where kuna > 15.78;
 
 select kratkamajica from zena where hlace like '%ana%';
 
-SELECT svekar.dukserica, mladic.asocijalno, muskarac.hlace
-FROM svekar
-JOIN sestra_svekar ON svekar.sifra = sestra_svekar.svekar
-JOIN sestra ON sestra_svekar.sestra = sestra.sifra
-JOIN zena ON sestra.sifra = zena.sestra
-JOIN muskarac ON zena.sifra = muskarac.zena
-JOIN mladic ON muskarac.sifra = mladic.muskarac
-WHERE zena.hlace LIKE 'a%' AND sestra.haljina LIKE '%ba%'
-ORDER BY muskarac.hlace DESC;
+select svekar.dukserica,mladic.asocijalno,muskarac.hlace,sestra.haljina 
+from svekar
+join sestra_svekar on svekar.sifra=sestra_svekar.svekar
+join sestra on sestra_svekar.sestra=sestra.sifra
+join zena on zena.sestra=sestra.sifra
+join muskarac on muskarac.zena=zena.sifra
+join mladic on mladic.muskarac=muskarac.sifra
+--where zena.hlace like 'D%' and sestra.haljina like '%je%' 
+order by muskarac.hlace desc
 
-SELECT sestra.haljina, sestra.maraka
-FROM sestra
-LEFT JOIN sestra_svekar ON sestra.sifra = sestra_svekar.sestra
-WHERE sestra_svekar.sestra IS NULL;
+select sestra.haljina,sestra.maraka 
+from sestra
+left join sestra_svekar on sestra.sifra=sestra_svekar.sestra
+where sestra_svekar.sestra is null
+
+
+
+
+
+
+
 
