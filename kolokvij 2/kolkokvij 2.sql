@@ -144,11 +144,14 @@ select suknja from cura where drugiputa is null;
 
 select zarucnica.novcica,brat.neprijatelj,neprijatelj.haljina
 from zarucnica
-join neprijatelj on neprijatelj.cura=cura.sifra
-join cura on cura.decko=decko.sifra
-join decko_zarucnica on decko.sifra=decko_zarucnica.decko
-join decko_zarucnica on  zarusnica.sifra=decko_zarucnica.zarucnica
-where cura.drugiputa     and decko.vesta like'%ba%'
+join decko_zarucnica on  zarucnica.sifra=decko_zarucnica.zarucnica
+join decko on decko_zarucnica.decko=decko.sifra
+join cura on decko.sifra=cura.decko
+join neprijatelj on cura.sifra=neprijatelj.cura
+join brat on neprijatelj.sifra = brat.neprijatelj
+where cura.drugiputa is not null    
+and decko.vesta like'%ba%'
+order by neprijatelj.haljina desc
 
 
 
