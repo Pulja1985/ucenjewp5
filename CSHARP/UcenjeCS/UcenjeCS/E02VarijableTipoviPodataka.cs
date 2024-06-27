@@ -83,6 +83,29 @@ namespace UcenjeCS
             Console.WriteLine(x / (float)y); ;
 
 
+            int c = 2 , d = 3;
+            c = --c + d;//4
+            d = c++ - d;//2
+            Console.WriteLine(c + d);//6
+
+
+            int e = 1, f = 2;
+            e = ++e + f;//4
+            f = e-- - f;//1
+            Console.WriteLine(e + f);//5
+
+            int g = 3, h = 4;
+            g = ++g + h;//8
+            h = ++h + g;//13
+            Console.WriteLine(g + h);//21
+
+
+            int k = 2, l = 3;
+            k = ++k - l;//0
+            l = k-- + l;//2
+            Console.WriteLine(k + l);//2
+
+
 
 
 
