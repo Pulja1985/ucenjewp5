@@ -23,11 +23,11 @@ namespace UcenjeCS
 
             Console.WriteLine("Unijeli ste" + ime);
 
-            Console.WriteLine( "unijeli ste {0} ",ime);
+            Console.WriteLine("unijeli ste {0} ", ime);
 
 
 
-            Console.WriteLine( "Unesi adresu");
+            Console.WriteLine("Unesi adresu");
 
             string adresa = Console.ReadLine();
 
@@ -55,7 +55,7 @@ namespace UcenjeCS
 
             string naziv = Console.ReadLine();
 
-            Console.WriteLine("Dodao si ime {0}",naziv);
+            Console.WriteLine("Dodao si ime {0}", naziv);
 
 
 
@@ -63,7 +63,7 @@ namespace UcenjeCS
 
             string psa= Console.ReadLine();
 
-            Console.WriteLine("ime psa je {0}",psa);
+            Console.WriteLine("ime psa je {0}", psa);
 
 
 

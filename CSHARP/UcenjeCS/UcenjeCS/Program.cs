@@ -3,7 +3,7 @@ using UcenjeCS;
 
 E02VarijableTipoviPodataka.Izvedi();
 
-//E01UlazIzlaz.izvedi();
+E01UlazIzlaz.izvedi();
 
 
 
