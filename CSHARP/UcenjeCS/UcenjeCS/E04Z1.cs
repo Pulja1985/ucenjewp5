@@ -8,49 +8,66 @@ namespace UcenjeCS
 {
     internal class E04Z1
     {
-
-
         public static void Izvedi()
         {
-            Console.Write("Unesite ocjenu(od 1 do 5):");
-            string ocjena = Console.ReadLine();
 
-            bool  isnumeric=int.TryParse(ocjena, out int o);
 
-            if (isnumeric && o >= 1 && o <= 5)
+            Console.WriteLine("Unesite brojčanu vrijednost ocjene (1 do 5): ");
+            string input = Console.ReadLine();
+
+            int ocjena;
+            bool isNumeric = int.TryParse(input, out ocjena);
+
+            if (isNumeric)
             {
-
-                string Ocjenauslovima;
-                switch(o)
+                switch (ocjena)
                 {
                     case 1:
-                        Ocjenauslovima = "Nedovoljan";
+                        Console.WriteLine("Ocjena: Nedovoljan");
                         break;
-
                     case 2:
-                        Ocjenauslovima = "Dovoljan";
+                        Console.WriteLine("Ocjena: Dovoljan");
                         break;
                     case 3:
-                        Ocjenauslovima = "Dobar";
+                        Console.WriteLine("Ocjena: Dobar");
                         break;
                     case 4:
-                        Ocjenauslovima = "Vrlo Dobar";
+                        Console.WriteLine("Ocjena: Vrlo dobar");
                         break;
                     case 5:
-                        Ocjenauslovima = "Odičan";
+                        Console.WriteLine("Ocjena: Izvrstan");
                         break;
-
-
+                    default:
+                        Console.WriteLine("Broj nije ocjena");
+                        break;
                 }
-
-                Console.WriteLine("ocjena u slovima je:" );
-                Console.WriteLine("Broj nije ocijena");
+            }
+            else
+            {
+                Console.WriteLine("Broj nije ocjena");
             }
 
-            
-          
 
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
