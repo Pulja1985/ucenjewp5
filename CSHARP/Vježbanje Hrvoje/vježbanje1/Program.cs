@@ -9,9 +9,9 @@
 using vježbanje1;
 
 
+VZ4.Izvedi();
 
-
-VZ3.Izvedi();
+//VZ3.Izvedi();
 
 
 //VZ2.Izvedi();
