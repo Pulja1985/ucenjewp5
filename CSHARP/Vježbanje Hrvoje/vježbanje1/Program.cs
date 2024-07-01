@@ -9,7 +9,12 @@
 using vježbanje1;
 
 
-VZ2.Izvedi();
+
+
+VZ3.Izvedi();
+
+
+//VZ2.Izvedi();
 
 //VZ1.Izvedi();
 
