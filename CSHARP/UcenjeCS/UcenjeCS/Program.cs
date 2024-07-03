@@ -3,8 +3,11 @@ using UcenjeCS;
 
 
 
+E06ForPetlja.Izvedi();
 
-E04Z1.Izvedi();
+//E05Nizovi.Izvedi();
+
+//E04Z1.Izvedi();
 
 //E04UvijetnoGrananjeSwitch.Izvedi();
 
