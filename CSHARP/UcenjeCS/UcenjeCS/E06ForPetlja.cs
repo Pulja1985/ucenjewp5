@@ -97,6 +97,8 @@ namespace UcenjeCS
             { 7, 8, 9 }
                 
             };
+
+
             for(int i = 0; i < tablica.GetLength(0); i++)
             {
                 for(int j = 0; j < tablica.GetLength(1); j++)

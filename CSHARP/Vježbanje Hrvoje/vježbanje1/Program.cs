@@ -8,8 +8,13 @@
 
 using vježbanje1;
 
+VZ6.Izvedi();
 
-VZ4.Izvedi();
+
+//VZ5.Izvedi();
+
+
+//VZ4.Izvedi();
 
 //VZ3.Izvedi();
 
