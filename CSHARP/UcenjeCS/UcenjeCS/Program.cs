@@ -2,7 +2,16 @@
 using UcenjeCS;
 
 
-zadatak1.Izvedi();
+E10TryCatch.Izvedi();
+
+//E09ForeachPetlja.Izvedi();
+
+//E08DoWhilePetlja.Izvedi();
+
+//E07Z1.Izvedi();
+
+
+//E07WhilePetlja.Izvedi();
 
 //E06ForPetlja.Izvedi();
 
