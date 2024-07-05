@@ -108,6 +108,7 @@ namespace UcenjeCS
                 Console.WriteLine();
             }
             Console.WriteLine("****");
+            //tablica množenja
 
             for(int i = 0;i<10; i++)//napraviti tablicu da lijepo izgleda
             {
