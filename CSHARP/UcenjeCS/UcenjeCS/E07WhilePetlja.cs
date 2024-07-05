@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UcenjeCS
+﻿namespace UcenjeCS
 {
     internal class E07WhilePetlja
     {
@@ -13,7 +7,7 @@ namespace UcenjeCS
         {
             int brojDo = 0;
 
-            for(int i = 0; i < brojDo; i++)
+            for (int i = 0; i < brojDo; i++)
             {
 
                 Console.WriteLine(i);
@@ -25,9 +19,9 @@ namespace UcenjeCS
             Console.WriteLine("****");
 
 
-            while(true)
+            while (true)
             {
-                for(int i = 0; i <10; i++)
+                for (int i = 0; i < 10; i++)
                 {
                     Console.Write(new Random().Next() + " ");
                 }
@@ -40,7 +34,7 @@ namespace UcenjeCS
             }
             Console.WriteLine("****");
 
-            brojDo  = 10;
+            brojDo = 10;
             while (brojDo-- > 0)
             {
                 Console.WriteLine(brojDo);
@@ -59,7 +53,7 @@ namespace UcenjeCS
             brojDo = 0;
             while (brojDo < 10)
             {
-                if(++brojDo == 2)
+                if (++brojDo == 2)
                 {
                     continue;
                 }
@@ -69,10 +63,10 @@ namespace UcenjeCS
 
             brojDo = 1;
 
-            while(brojDo <= 10)
+            while (brojDo <= 10)
             {
                 j = 1;
-                while(brojDo <= 10)
+                while (brojDo <= 10)
                 {
                     Console.Write(brojDo * j++ + "\t");
                 }

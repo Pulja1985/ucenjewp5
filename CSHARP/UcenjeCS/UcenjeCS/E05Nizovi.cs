@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UcenjeCS
+﻿namespace UcenjeCS
 {
     internal class E05Nizovi
     {
@@ -53,8 +47,8 @@ namespace UcenjeCS
             {7,8,9}
             };
 
-            Console.WriteLine(tablica[1,2]);
-            Console.WriteLine(tablica[2,2]);
+            Console.WriteLine(tablica[1, 2]);
+            Console.WriteLine(tablica[2, 2]);
 
             int[,,] kocka = { };//trodimenzionalni niz
             int[,,,] tesarect = { };// tesarect - 4 dimenzije
@@ -80,6 +74,6 @@ namespace UcenjeCS
 
 
 
-        } 
+        }
     }
 }

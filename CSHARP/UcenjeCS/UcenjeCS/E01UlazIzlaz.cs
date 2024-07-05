@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UcenjeCS
+﻿namespace UcenjeCS
 {
     internal class E01UlazIzlaz
     {
@@ -17,7 +10,7 @@ namespace UcenjeCS
 
             Console.WriteLine("Hello");
 
-            Console.Write( "Upiši svoje ime");
+            Console.Write("Upiši svoje ime");
 
             string ime = Console.ReadLine();
 
@@ -32,20 +25,20 @@ namespace UcenjeCS
             string adresa = Console.ReadLine();
 
 
-            Console.WriteLine( "unesi grad");
+            Console.WriteLine("unesi grad");
 
-            string grad=Console.ReadLine(); 
+            string grad = Console.ReadLine();
 
 
 
             Console.WriteLine(adresa);
             Console.WriteLine(grad);
 
-            Console.WriteLine( "Upiši svoje prezime");
+            Console.WriteLine("Upiši svoje prezime");
 
             string prezime = Console.ReadLine();
 
-            Console.WriteLine( "Unešeno" + prezime);
+            Console.WriteLine("Unešeno" + prezime);
 
             Console.WriteLine("unešeno {0}", prezime);
 
@@ -61,7 +54,7 @@ namespace UcenjeCS
 
             Console.WriteLine("upiši naziv svog psa");
 
-            string psa= Console.ReadLine();
+            string psa = Console.ReadLine();
 
             Console.WriteLine("ime psa je {0}", psa);
 

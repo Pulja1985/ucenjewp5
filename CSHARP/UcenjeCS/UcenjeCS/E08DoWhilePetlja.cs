@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UcenjeCS
+﻿namespace UcenjeCS
 {
     internal class E08DoWhilePetlja
     {
@@ -14,9 +8,9 @@ namespace UcenjeCS
             {
                 Console.WriteLine("Edunova");
 
-            }while(false);
+            } while (false);
 
-            while(false) Console.WriteLine("Osijek");
+            while (false) Console.WriteLine("Osijek");
 
 
 
@@ -27,7 +21,7 @@ namespace UcenjeCS
             } while (i < 10);
         }
 
-        
+
 
 
 

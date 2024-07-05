@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UcenjeCS
+﻿namespace UcenjeCS
 {
     internal class E06ForPetlja
     {
@@ -93,28 +86,28 @@ namespace UcenjeCS
             { 1, 2, 30 },//6 i 9 moraju biti ispod 0 na broju 30
                 
             { 4, 5, 6 },
-                
+
             { 7, 8, 9 }
-                
+
             };
 
 
-            for(int i = 0; i < tablica.GetLength(0); i++)
+            for (int i = 0; i < tablica.GetLength(0); i++)
             {
-                for(int j = 0; j < tablica.GetLength(1); j++)
+                for (int j = 0; j < tablica.GetLength(1); j++)
                 {
-                    Console.Write(tablica[i,j] + "");
+                    Console.Write(tablica[i, j] + "");
                 }
                 Console.WriteLine();
             }
             Console.WriteLine("****");
             //tablica množenja
 
-            for(int i = 0;i<10; i++)//napraviti tablicu da lijepo izgleda
+            for (int i = 0; i < 10; i++)//napraviti tablicu da lijepo izgleda
             {
-                for(int j = 0; j<10; j++)
+                for (int j = 0; j < 10; j++)
                 {
-                    Console.WriteLine((i+1)*(j+1) + "");
+                    Console.WriteLine((i + 1) * (j + 1) + "");
                 }
                 Console.WriteLine();
             }
@@ -122,13 +115,13 @@ namespace UcenjeCS
             Console.WriteLine("****");
 
             int ukupno = 0;
-            for(int i= 0; i < 10; i++)
+            for (int i = 0; i < 10; i++)
             {
-                if(i == 1 || i == 3)
+                if (i == 1 || i == 3)
                 {
                     continue;
                 }
-                if(++ukupno > 5)
+                if (++ukupno > 5)
                 {
                     break;
                 }
@@ -141,31 +134,31 @@ namespace UcenjeCS
 
             }
             Console.WriteLine("****");
-            for (int i = 0;i < 10; i++)
+            for (int i = 0; i < 10; i++)
             {
-                for (int j = 0;j < 10; j++)
+                for (int j = 0; j < 10; j++)
                 {
                     goto labela;
                 }
             }
 
-            labela:
+        labela:
             Console.WriteLine("Hello");
 
             Console.WriteLine("****");
 
-            for(int i = 0; i> -1; i++)
+            for (int i = 0; i > -1; i++)
             {
                 break;//loša beskonacna petlja
             }
             int broj = 0;
 
 
-            for(; ; )
+            for (; ; )
             {
                 Console.Write("Unesi brojizmeđu 10 i 20: ");
                 broj = int.Parse(Console.ReadLine());
-                if (broj >=10 && broj <= 20)
+                if (broj >= 10 && broj <= 20)
                 {
                     break;
                 }
@@ -180,13 +173,13 @@ namespace UcenjeCS
             String ime1 = "Ana";
             char[] ime2 = { 'A', 'n', 'a', };
 
-            for(int i = 0; i < ime2.Length; i++)
+            for (int i = 0; i < ime2.Length; i++)
             {
                 Console.Write(ime2[i]);
             }
             Console.WriteLine();
 
-            for (int i = 0; i<ime1.Length; i++)
+            for (int i = 0; i < ime1.Length; i++)
             {
                 Console.Write(ime1[i]);
             }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UcenjeCS
+﻿namespace UcenjeCS
 {
     internal class E02VarijableTipoviPodataka
     {
@@ -17,7 +11,7 @@ namespace UcenjeCS
             int i;
 
 
-            i=7; 
+            i = 7;
 
 
             Console.WriteLine(i);
@@ -31,9 +25,9 @@ namespace UcenjeCS
 
             Console.WriteLine(broj + 2);
 
-            Console.Write("Unesi decimalni broj(, je oznaka za decimalni broj): " );
+            Console.Write("Unesi decimalni broj(, je oznaka za decimalni broj): ");
 
-            Console.WriteLine(float.Parse (Console.ReadLine())+1);
+            Console.WriteLine(float.Parse(Console.ReadLine()) + 1);
 
 
 
@@ -45,7 +39,7 @@ namespace UcenjeCS
             int j = 3;
 
             Console.WriteLine(j == 3);
-            Console.WriteLine(j!=6);
+            Console.WriteLine(j != 6);
 
             i = 0;
             i = i + 1;
@@ -64,10 +58,10 @@ namespace UcenjeCS
 
 
 
-            int x = 0, y=1;
+            int x = 0, y = 1;
             x = ++x - y;
             y = x-- + y;
-            Console.WriteLine( x+y);
+            Console.WriteLine(x + y);
 
 
 
@@ -83,7 +77,7 @@ namespace UcenjeCS
             Console.WriteLine(x / (float)y); ;
 
 
-            int c = 2 , d = 3;
+            int c = 2, d = 3;
             c = --c + d;//4
             d = c++ - d;//2
             Console.WriteLine(c + d);//6

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UcenjeCS
+﻿namespace UcenjeCS
 {
     internal class E03UvjetnoGrananjeIF
     {
@@ -34,7 +28,7 @@ namespace UcenjeCS
 
 
             // najčešća sintaksa
-            if ( i == 8)
+            if (i == 8)
             {
 
             }
@@ -79,7 +73,7 @@ namespace UcenjeCS
 
             else
             {
-                Console.WriteLine( "Ostalo");
+                Console.WriteLine("Ostalo");
 
             }
 
@@ -95,7 +89,7 @@ namespace UcenjeCS
                 Console.WriteLine("x i y su i");
             }
 
-            
+
 
             // operatori | i ||
 
@@ -103,11 +97,11 @@ namespace UcenjeCS
             // || ukoliko je prvi uvijet zadovoljen, ne gleda se drugi
 
 
-            if (x>1 || Y == 0)
+            if (x > 1 || Y == 0)
             {
                 Console.WriteLine("ako je prvi uvjet zadovoljen ulazi se u if");
             }
-            
+
             // if se moze gnjezditi
             if (x == 3)
             {
@@ -121,7 +115,7 @@ namespace UcenjeCS
             // inline if - tercijalni  operator  ? :
 
             x = 0;
-            if(i > 0)
+            if (i > 0)
             {
                 Console.WriteLine("OK");
             }

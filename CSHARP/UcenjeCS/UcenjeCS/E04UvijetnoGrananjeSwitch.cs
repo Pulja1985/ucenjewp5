@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UcenjeCS
+﻿namespace UcenjeCS
 {
     internal class E04UvijetnoGrananjeSwitch
     {
@@ -36,9 +30,9 @@ namespace UcenjeCS
 
 
 
-        
-            
-        
+
+
+
             }
 
             // switch radi s int, string, char i drugi https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/statements#1383-the-switch-statement

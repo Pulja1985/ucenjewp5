@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UcenjeCS
+﻿namespace UcenjeCS
 {
     internal class E10TryCatch
     {
@@ -37,7 +31,7 @@ namespace UcenjeCS
                     Console.WriteLine("Niste unijeli broj");
                 }
             }
-            Console.WriteLine("Hvala na unosu {0} broja",broj);
+            Console.WriteLine("Hvala na unosu {0} broja", broj);
 
 
             string ime;
@@ -45,16 +39,16 @@ namespace UcenjeCS
             {
                 Console.Write("Koje je tvoje ime: ");
                 ime = Console.ReadLine().Trim();
-                if(ime.Length  == 0)
+                if (ime.Length == 0)
                 {
                     Console.WriteLine("Niste unijeli ime");
                     continue;
                 }
                 break;
-            }while (true);
+            } while (true);
 
 
-            Console.WriteLine("Vaše ime je >{0}<",ime);
+            Console.WriteLine("Vaše ime je >{0}<", ime);
 
 
 
