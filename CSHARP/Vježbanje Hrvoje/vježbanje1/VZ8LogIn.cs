@@ -28,7 +28,7 @@ namespace vježbanje1
             }
             else
             {
-                Console.WriteLine("pogršan username ili password");
+                Console.WriteLine("pogrešan username ili password");
             }
             
             
