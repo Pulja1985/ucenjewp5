@@ -41,13 +41,13 @@
 
 
 
-            for (int i = 0;i < z.Length; i++)
+            for (int i = 0; i < z.Length; i++)
             {
                 Console.WriteLine("Uneseni broj " + z[i]);
             }
 
 
-            
+
 
 
 

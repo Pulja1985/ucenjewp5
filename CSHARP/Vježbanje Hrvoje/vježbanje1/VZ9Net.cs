@@ -1,7 +1,4 @@
-﻿using System;
-using System.ComponentModel.Design;
-
-namespace vježbanje1
+﻿namespace vježbanje1
 {
     internal class VZ9Net
     {
@@ -181,7 +178,9 @@ namespace vježbanje1
             
             Console.ReadLine();
             */
-            try
+
+
+            try    //try catch loop
             {
                 Console.Write("Enter a number: ");
                 int num1 = int.Parse(Console.ReadLine());
@@ -190,12 +189,12 @@ namespace vježbanje1
 
                 Console.WriteLine(num1 / num2);
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
 
-            
+
 
 
 
