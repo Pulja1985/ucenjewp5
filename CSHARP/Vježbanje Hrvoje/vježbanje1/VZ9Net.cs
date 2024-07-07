@@ -16,7 +16,7 @@ namespace vježbanje1
             double gpa = 3.2;// srednje veliki decimalni broj imamo i "float" i "decimal"
             bool isMale = true;// govori samo true ili false
             Console.WriteLine("giraffe \nacademy"); //\n je da printas u drugu liniju sta je iza slova n
-            Console.WriteLine("giraffe \"academy\""); // " daje navodnike iza sebe
+            Console.WriteLine("giraffe \"academy\""); // \" daje navodnike iza sebe
 
             string pharse = "giraffe academy";
             Console.WriteLine(pharse);
@@ -137,8 +137,65 @@ namespace vježbanje1
             Console.ReadLine();
             */
 
+            /*
+            int index = 1;  //while loop
 
+            while (index<=5)
+            {
+                Console.WriteLine(index);
+                index++;
+            }
+            Console.ReadLine();
+            */
 
+            /*
+            string secretWord = "Honda";//while loop
+            string quess = "";
+            int guessCount = 0;
+            int guessLimit = 3;
+            bool outOfGuesses = false;
+
+            while(quess!=secretWord && !outOfGuesses)
+            {
+                if (guessCount<guessLimit)
+                {
+                    Console.Write("Enter guess: ");
+                    quess = Console.ReadLine();
+                    guessCount++;
+
+                }
+                else
+                {
+                    outOfGuesses = true;
+                }
+                
+            }
+            if (outOfGuesses)
+            {
+                Console.WriteLine("You Lose!");
+            }
+            else
+            {
+                Console.Write("You Win!");
+            }
+            
+            Console.ReadLine();
+            */
+            try
+            {
+                Console.Write("Enter a number: ");
+                int num1 = int.Parse(Console.ReadLine());
+                Console.Write("Enter another number: ");
+                int num2 = int.Parse(Console.ReadLine());
+
+                Console.WriteLine(num1 / num2);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            
 
 
 
