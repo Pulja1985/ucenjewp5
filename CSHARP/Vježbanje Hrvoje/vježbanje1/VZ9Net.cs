@@ -20,7 +20,7 @@ namespace vježbanje1
 
             string pharse = "giraffe academy";
             Console.WriteLine(pharse);
-            Console.WriteLine(pharse.Length);//govori koliko ima znakova u tom stringu// https://www.youtube.com/watch?v=GhQdlIFylQ8
+            Console.WriteLine(pharse.Length);//govori koliko ima znakova u tom stringu// https://www.youtube.com/watch?v=GhQdlIFylQ8 // stao na 2:20 sati
             Console.WriteLine(pharse.ToUpper());//pretvara sva slova u velika 
             Console.WriteLine(pharse.ToLower());//ToLower pretvara u mala
             Console.WriteLine(pharse.Contains("Academy"));//gleda dali sadrzava određenu rijec u sebi
@@ -99,6 +99,9 @@ namespace vježbanje1
             }
             Console.ReadLine();*/
 
+
+            // kalkulator
+            /*
             Console.Write("Enter a number");
             decimal num1 = Convert.ToDecimal(Console.ReadLine());
 
@@ -132,7 +135,9 @@ namespace vježbanje1
                 Console.WriteLine("Invalid operator");
             }
             Console.ReadLine();
-            
+            */
+
+
 
 
 
