@@ -1,8 +1,9 @@
 ﻿
 using UcenjeCS;
 
+E11Metode.Izvedi();
 
-E10TryCatch.Izvedi();
+//E10TryCatch.Izvedi();
 
 //E09ForeachPetlja.Izvedi();
 
