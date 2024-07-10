@@ -24,7 +24,7 @@
                 while (guess != number)
                 {
                     Console.WriteLine("Guess a number between 1 and 100 : ");
-                    guess = Convert.ToInt32(Console.ReadLine());
+                    guess = int.Parse(Console.ReadLine());
                     Console.WriteLine("Guess: " + guess);
                     if (guess > number)
                     {
