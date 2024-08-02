@@ -8,7 +8,9 @@
 
 using vježbanje1;
 
-VZ10.Izvedi();
+VZ11.Izvedi();
+
+//VZ10.Izvedi();
 
 //VZ9Net.Izvedi(); 
 
