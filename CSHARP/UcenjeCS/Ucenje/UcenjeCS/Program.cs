@@ -3,7 +3,9 @@
 
 using UcenjeCS;
 
-UcenjeCS.E15KlasaObjekt.Program.Izvedi();
+new UcenjeCS.E16NasljedivanjePolimorfizam.Program();
+
+//UcenjeCS.E15KlasaObjekt.Program.Izvedi();
 
 //E13Vjezbanje.Izvedi();
 
