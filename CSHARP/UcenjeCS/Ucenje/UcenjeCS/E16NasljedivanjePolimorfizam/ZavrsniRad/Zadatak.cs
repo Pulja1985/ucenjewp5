@@ -20,8 +20,10 @@ namespace UcenjeCS.E16NasljedivanjePolimorfizam.ZavrsniRad
          * 
          */
 
-        public Zadatak() { 
-        //ovdje instancirati svaku kreiranu klasu jednom i dodjeliti svim svojstvima vrijednosti
+        public Zadatak() {
+            //ovdje instancirati svaku kreiranu klasu jednom i dodjeliti svim svojstvima vrijednosti
+            var u = new Utrka();
+            u.sifra = 1;
         }
 
     }

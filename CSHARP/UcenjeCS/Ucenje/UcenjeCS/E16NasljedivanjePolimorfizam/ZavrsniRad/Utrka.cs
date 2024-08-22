@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace UcenjeCS.E16NasljedivanjePolimorfizam.ZavrsniRad
 {
-    internal class Utrka
+    internal class Utrka : Entitet
     {
+        public DateTime? Datum { get; set; }
+
+        public string Mjesto { get; set; }
+
+        public string  Naziv { get; set; }
     }
 }
