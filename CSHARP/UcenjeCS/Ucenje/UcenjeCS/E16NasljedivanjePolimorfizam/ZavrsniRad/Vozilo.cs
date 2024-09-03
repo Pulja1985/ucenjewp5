@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UcenjeCS.E16NasljedivanjePolimorfizam.ZavrsniRad
 {
-    internal class Vozilo
+    internal class Vozilo:Entitet
     {
         public string Marka { get; set; }
 

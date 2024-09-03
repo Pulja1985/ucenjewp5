@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace UcenjeCS.E16NasljedivanjePolimorfizam.ZavrsniRad
 {
-    internal class Utrka
+    internal class Utrka: Entitet
     {
-        public int  Sifra { get; set; }
+        
 
         public DateTime Datum { get; set; }
 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace UcenjeCS.E16NasljedivanjePolimorfizam.ZavrsniRad
 {
-    internal class Vozac
+    internal class Vozac:Entitet
     {
         public string Ime { get; set; }
 

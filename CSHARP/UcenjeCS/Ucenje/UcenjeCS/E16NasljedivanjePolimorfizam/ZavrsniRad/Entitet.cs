@@ -8,5 +8,14 @@ namespace UcenjeCS.E16NasljedivanjePolimorfizam.ZavrsniRad
 {
     internal class Entitet
     {
+        public int Sifra { get; set; }
+
+
+
+
+
+
     }
 }
+
+   
