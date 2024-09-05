@@ -3,7 +3,9 @@
 
 using UcenjeCS;
 
-new UcenjeCS.E16NasljedivanjePolimorfizam.Program();
+new UcenjeCS.E17GenericiLambdaEkstenzije.Program();
+
+//new UcenjeCS.E16NasljedivanjePolimorfizam.Program();
 
 //UcenjeCS.E15KlasaObjekt.Program.Izvedi();
 
