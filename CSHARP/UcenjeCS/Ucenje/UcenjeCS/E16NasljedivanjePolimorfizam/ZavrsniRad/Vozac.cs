@@ -17,5 +17,33 @@ namespace UcenjeCS.E16NasljedivanjePolimorfizam.ZavrsniRad
         public string Prezime { get; set; }
 
         public int OIB { get; set; }
+
+        public Vozac(string Ime, string Prezime, int OIB)
+        {
+            this.Ime = Ime;
+            this.Prezime = Prezime;
+            this.OIB = OIB;
+
+            
+        }
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine("Ime: " + this.Ime);
+            sb.AppendLine("Prezime: " + this.Prezime);
+            
+
+            return base.ToString();
+        }
+
+        
+        
+            
+            
+        
+
+
+
     }
 }

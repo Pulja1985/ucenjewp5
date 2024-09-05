@@ -22,9 +22,15 @@ namespace UcenjeCS.E16NasljedivanjePolimorfizam.ZavrsniRad
 
         public Zadatak() {
             //ovdje instancirati svaku kreiranu klasu jednom i dodjeliti svim svojstvima vrijednosti
-            var u = new Utrka();
-            u.sifra = 1;
-        }
+            var utrka = new Utrka("15.06.2024", "Osijek", "OSRS");
+            utrka.sifra = 1;
+
+            var vozac = new Vozac("Hrvoje","Puljić",27104444467);
+            vozac.sifra = 1;
+
+            var vozilo = new Vozilo("Honda", "Civic", "Prednji", 300);
+            vozilo.sifra = 1;
+        } 
 
     }
 }

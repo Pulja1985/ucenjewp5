@@ -16,15 +16,24 @@ namespace UcenjeCS.E16NasljedivanjePolimorfizam.ZavrsniRad
 
         public string  Naziv { get; set; }
 
-    
-    
-        
+        public Utrka(DateTime? datum, string mjesto, string naziv)
+        {
+            this.Datum = datum;
+            this.Mjesto = mjesto;
+            this.Naziv = naziv;
 
-        
+        }
 
-        
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Datum: " + this.Datum);
+            sb.AppendLine("Mjesto: " + this.Mjesto);
+            sb.AppendLine("Naziv: " + this.Naziv);
 
-        
+
+            return base.ToString();
+        }
 
     }
 }
