@@ -25,10 +25,10 @@ namespace UcenjeCS.E16NasljedivanjePolimorfizam.ZavrsniRad
             var utrka = new Utrka("15.06.2024", "Osijek", "OSRS");
             utrka.sifra = 1;
 
-            var vozac = new Vozac("Hrvoje","Puljić",27104444467);
+            var vozac = new Vozac("Hrvoje","Puljić","27104444467");
             vozac.sifra = 1;
 
-            var vozilo = new Vozilo("Honda", "Civic", "Prednji", 300);
+            var vozilo = new Vozilo("Honda", "Civic", "Prednji", "300");
             vozilo.sifra = 1;
         } 
 

@@ -21,13 +21,13 @@ namespace UcenjeCS.E16NasljedivanjePolimorfizam.ZavrsniRad
 
         public string Pogon { get; set; }
 
-        public int Snaga { get; set; }
+        public string Snaga { get; set; }
 
 
 
         public int VozacSifra { get; set; }
 
-        public Vozilo(string marka, string model, string pogon, int snaga, int vozacSifra)
+        public Vozilo(string marka, string model, string pogon, string snaga, int vozacSifra)
         {
             this.Marka = marka;
             this.Model = model;
