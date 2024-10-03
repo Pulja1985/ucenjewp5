@@ -9,9 +9,28 @@ export default function SmjeroviDodaj(){
 
     const navigate = useNavigate()
 
+    async function dodaj(smjer) {
+        //console.log(smjer)
+        //console.log(JSON.stringify(smjer))
+        const odgovor = await SmjerService.dodaj(smjer)
+        if(odgovor.greska){
+            alert(odgovor.poruka)
+            return;
+        }
+        navigate(RouteNames.SMJER_PREGLED)
+    }
+
     function obradiSubmit(e){ // e je event
         e.preventDefault(); // nemoj odraditi zahtjev na server
-
+        let podaci = new FormData(e.target)
+        //console.log(podaci.get('naziv'))
+        dodaj({
+            naziv: podaci.get('naziv'),
+            trajanje: parseInt(podaci.get('trajanje')),
+            cijena: parseFloat(podaci.get('cijena')),
+            izvodiSeOd: moment.utc(podaci.get('izvodiSeOd')),
+            vaucer: podaci.get('vaucer')=='on' ? true : false 
+        })
     }
 
     return(
@@ -37,7 +56,7 @@ export default function SmjeroviDodaj(){
 
             <Form.Group controlId="izvodiSeOd">
                 <Form.Label>Izvodi se od</Form.Label>
-                <Form.Control type="date" step={0.01} name="izvodiSeOd" />
+                <Form.Control type="date" name="izvodiSeOd" />
             </Form.Group>
 
             <Form.Group controlId="vaucer">

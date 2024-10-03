@@ -25,8 +25,41 @@ async function brisanje(sifra){
     })
 }
 
+async function dodaj(smjer){
+    return await HttpService.post('/Smjer',smjer)
+    .then(()=>{
+        return {greska: false, poruka: 'Dodano'}
+    })
+    .catch(()=>{
+        return {greska: true, poruka: 'Problem kod dodavanja smjera'}   
+    })
+}
+
+async function promjena(sifra,smjer){
+    return await HttpService.put('/Smjer/' + sifra,smjer)
+    .then(()=>{
+        return {greska: false, poruka: 'Dodano'}
+    })
+    .catch(()=>{
+        return {greska: true, poruka: 'Problem kod dodavanja smjera'}   
+    })
+}
+
+async function getBySifra(sifra){
+    return await HttpService.get('/Smjer/'+sifra)
+    .then((odgovor)=>{
+        return {greska: false, poruka: odgovor.data}
+    })
+    .catch((e)=>{
+        return {greska: true, poruka: 'Problem kod dohvaćanja smjera s šifrom '+sifra}   
+    })
+}
+
 
 export default {
     get,
-    brisanje
+    brisanje,
+    dodaj,
+    getBySifra,
+    promjena
 }

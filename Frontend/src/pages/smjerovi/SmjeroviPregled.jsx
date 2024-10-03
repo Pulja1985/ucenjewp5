@@ -4,11 +4,13 @@ import { Button, Table } from "react-bootstrap";
 import { NumericFormat } from "react-number-format";
 import moment from "moment";
 import { GrValidate } from "react-icons/gr";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { RouteNames } from "../../constants";
 
 
 export default function SmjeroviPregled(){
+
+    const navigate = useNavigate()
 
     const[smjerovi, setSmjerovi] = useState();
 
@@ -113,6 +115,12 @@ export default function SmjeroviPregled(){
                             onClick={()=>obrisi(smjer.sifra)}
                             >
                                 Obriši
+                            </Button>
+                            &nbsp;&nbsp;&nbsp;
+                            <Button
+                            onClick={()=>navigate(`/smjerovi/${smjer.sifra}`)}
+                            >
+                                Promjena
                             </Button>
                         </td>
                     </tr>
