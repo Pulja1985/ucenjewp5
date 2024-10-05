@@ -3,7 +3,7 @@ import { HttpService } from "./HttpService";
 
 
 async function get(){
-    return await HttpService.get('/Smjer')
+    return await HttpService.get('/Vozac')
     .then((odgovor)=>{
         //console.log(odgovor.data)
         //console.table(odgovor.data)
