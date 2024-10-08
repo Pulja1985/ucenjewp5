@@ -14,7 +14,7 @@ export default function NavBarPrijavnice(){
             <Navbar expand="lg" className="bg-body-tertiary">
                 <Navbar.Brand className='ruka'
                 onClick={()=>navigate(RouteNames.HOME)}
-                >Edunova APP</Navbar.Brand>
+                >Prijavnice APP</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
@@ -28,7 +28,7 @@ export default function NavBarPrijavnice(){
                         <NavDropdown.Item href="#action/3.2">
                         Vozila
                         </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Grupe</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.3">Utrke</NavDropdown.Item>
                         
                        
                     </NavDropdown>
