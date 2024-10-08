@@ -1,5 +1,6 @@
 import VozacService from "../../services/VozacService"
 import { Button, Row, Col, Form } from "react-bootstrap";
+import moment from "moment";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { RouteNames } from "../../constants";
 import { useEffect, useState } from "react";
@@ -18,7 +19,7 @@ export default function VozaciPromjena(){
             return
         }
         //debugger; // ovo radi u Chrome inspect (ali i ostali preglednici)
-        setVozac(odgovor.poruka)
+        
     } 
 
     useEffect(()=>{

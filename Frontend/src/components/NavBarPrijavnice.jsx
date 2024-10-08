@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useNavigate } from 'react-router-dom';
 import { RouteNames } from '../constants';
 
-export default function NavBarEdunova(){
+export default function NavBarPrijavnice(){
 
     const navigate = useNavigate(); // U pravilu ; ne treba
 
@@ -18,15 +18,15 @@ export default function NavBarEdunova(){
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                    <Nav.Link href="http://tjakopec-001-site2.ftempurl.com/swagger/index.html" target='_blank'>Swagger</Nav.Link>
+                    <Nav.Link href="http://krunokruno-001-site1.dtempurl.com/swagger/index.html" target='_blank'>Swagger</Nav.Link>
                     <NavDropdown title="Programi" id="basic-nav-dropdown">
                         <NavDropdown.Item
 
-                        onClick={()=>navigate(RouteNames.SMJER_PREGLED)}
+                        onClick={()=>navigate(RouteNames.VOZAC_PREGLED)}
 
-                        >Smjerovi</NavDropdown.Item>
+                        >Vozaci</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">
-                        Polaznici
+                        Vozila
                         </NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">Grupe</NavDropdown.Item>
                         

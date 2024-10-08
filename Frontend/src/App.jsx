@@ -1,13 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Container from 'react-bootstrap/Container';
 import './App.css'
-import NavBarEdunova from './components/NavBarEdunova';
+import NavBarEdunova from './components/NavBarPrijavnice';
 import { Route, Routes } from 'react-router-dom';
 import { RouteNames } from './constants';
 import Pocetna from './pages/Pocetna';
-import SmjeroviPregled from './pages/smjerovi/SmjeroviPregled';
-import SmjeroviDodaj from './pages/smjerovi/SmjeroviDodaj';
-import SmjeroviPromjena from './pages/smjerovi/SmjeroviPromjena';
+import VozaciPregled from './pages/Vozaci/VozacPregled';
+import VozaciDodaj from './pages/Vozaci/VozacDodaj';
+import VozaciPromjena from './pages/Vozaci/VozacPromjena';
 
 
 function App() {
@@ -19,9 +19,9 @@ function App() {
       <Routes>
         <Route path={RouteNames.HOME} element={<Pocetna/>} />
 
-        <Route path={RouteNames.SMJER_PREGLED} element={<SmjeroviPregled/>}/>
-        <Route path={RouteNames.SMJER_NOVI} element={<SmjeroviDodaj/>}/>
-        <Route path={RouteNames.SMJER_PROMJENA} element={<SmjeroviPromjena/>}/>
+        <Route path={RouteNames.VOZAC_PREGLED} element={<VozaciPregled/>}/>
+        <Route path={RouteNames.VOZAC_NOVI} element={<VozaciDodaj/>}/>
+        <Route path={RouteNames.VOZAC_PROMJENA} element={<VozaciPromjena/>}/>
 
       </Routes>
       <hr/>

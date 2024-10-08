@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import SmjerService from "../../services/SmjerService"
+import VozacService from "../../services/VozacService"
 import { Button, Table } from "react-bootstrap";
 import { NumericFormat } from "react-number-format";
 import moment from "moment";
