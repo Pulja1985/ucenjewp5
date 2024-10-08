@@ -11,47 +11,47 @@ async function get(){
     })
     .catch((e)=>{
         //console.log(e)
-        return {greska: true, poruka: 'Problem kod dohvaćanja smjerova'}   
+        return {greska: true, poruka: 'Problem kod dohvaćanja vozaca'}   
     })
 }
 
 async function brisanje(sifra){
-    return await HttpService.delete('/Smjer/' + sifra)
+    return await HttpService.delete('/Vozac/' + sifra)
     .then(()=>{
         return {greska: false, poruka: 'Obrisano'}
     })
     .catch(()=>{
-        return {greska: true, poruka: 'Problem kod brisanja smjera'}   
+        return {greska: true, poruka: 'Problem kod brisanja vozaca'}   
     })
 }
 
-async function dodaj(smjer){
-    return await HttpService.post('/Smjer',smjer)
+async function dodaj(vozac){
+    return await HttpService.post('/Vozac',vozac)
     .then(()=>{
         return {greska: false, poruka: 'Dodano'}
     })
     .catch(()=>{
-        return {greska: true, poruka: 'Problem kod dodavanja smjera'}   
+        return {greska: true, poruka: 'Problem kod dodavanja vozaca'}   
     })
 }
 
-async function promjena(sifra,smjer){
-    return await HttpService.put('/Smjer/' + sifra,smjer)
+async function promjena(sifra,vozac){
+    return await HttpService.put('/Vozac/' + sifra,vozac)
     .then(()=>{
         return {greska: false, poruka: 'Dodano'}
     })
     .catch(()=>{
-        return {greska: true, poruka: 'Problem kod dodavanja smjera'}   
+        return {greska: true, poruka: 'Problem kod dodavanja vozaca'}   
     })
 }
 
 async function getBySifra(sifra){
-    return await HttpService.get('/Smjer/'+sifra)
+    return await HttpService.get('/Vozac/'+sifra)
     .then((odgovor)=>{
         return {greska: false, poruka: odgovor.data}
     })
     .catch((e)=>{
-        return {greska: true, poruka: 'Problem kod dohvaćanja smjera s šifrom '+sifra}   
+        return {greska: true, poruka: 'Problem kod dohvaćanja vozaca s šifrom '+sifra}   
     })
 }
 

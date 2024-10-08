@@ -45,14 +45,18 @@ export default function VozaciDodaj(){
 
             <Form.Group controlId="prezime">
                 <Form.Label>Prezime</Form.Label>
-                <Form.Control type="number" min={10} max={500} name="prezime" required />
+                <Form.Control type="text" name="prezime" required />
             </Form.Group>
-
 
             <Form.Group controlId="oib">
                 <Form.Label>Oib</Form.Label>
-                <Form.Control type="number" step={0.01} name="oib"  />
+                <Form.Control type="text" name="oib" required />
             </Form.Group>
+
+           
+
+
+            
 
             
 
@@ -64,7 +68,7 @@ export default function VozaciDodaj(){
             <Col xs={6} sm={12} md={9} lg={6} xl={6} xxl={6}>
             <Button variant="success"
             type="submit"
-            className="siroko">Dodaj smjer</Button>
+            className="siroko">Dodaj vozaca</Button>
             </Col>
         </Row>
         </Form>
