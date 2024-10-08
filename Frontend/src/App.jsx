@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Container from 'react-bootstrap/Container';
 import './App.css'
-import NavBarEdunova from './components/NavBarPrijavnice';
+import NavBarPrijavnice from './components/NavBarPrijavnice';
 import { Route, Routes } from 'react-router-dom';
 import { RouteNames } from './constants';
 import Pocetna from './pages/Pocetna';
@@ -15,7 +15,7 @@ function App() {
   return (
     <>
     <Container>
-      <NavBarEdunova />
+      <NavBarPrijavnice />
       <Routes>
         <Route path={RouteNames.HOME} element={<Pocetna/>} />
 
@@ -25,7 +25,7 @@ function App() {
 
       </Routes>
       <hr/>
-      &copy; Edunova
+      &copy; Prijavnice
     </Container>
     
     </>
